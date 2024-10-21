@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css" />
+    <title>Music Player</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="song-info">
+        <div class="artist-name">name</div>
+        <div class="song-name">song-name</div>
+        <div class="progress-bar">
+          <div class="fill-bar"></div>
+        </div>
+        <div class="time">0:00 - 0:00</div>
+      </div>
+      <div class="disk">
+        <div class="circle"></div>
+        <div id="cover" class="cover"></div>
+      </div>
+      <div class="controls">
+        <ion-icon id="prev" class="prev-btn" name="play-back-outline"></ion-icon>
+        <ion-icon id="play" class="play-btn" name="play-outline"></ion-icon>
+        <ion-icon id="next" class="next-btn" name="play-forward-outline"></ion-icon>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script src="./script.js"></script>
+    <!-- ion-icon -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
