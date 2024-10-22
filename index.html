@@ -3,41 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- css -->
+    <!-- CSS -->
     <link rel="stylesheet" href="./style.css" />
-    <title>Music Player</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="song-info">
-        <div class="artist-name">name</div>
-        <div class="song-name">song-name</div>
-        <div class="progress-bar">
-          <div class="fill-bar"></div>
-        </div>
-        <div class="time">0:00 - 0:00</div>
-      </div>
-      <div class="disk">
-        <div class="circle"></div>
-        <div id="cover" class="cover"></div>
-      </div>
-      <div class="controls">
-        <ion-icon id="prev" class="prev-btn" name="play-back-outline"></ion-icon>
-        <ion-icon id="play" class="play-btn" name="play-outline"></ion-icon>
-        <ion-icon id="next" class="next-btn" name="play-forward-outline"></ion-icon>
-      </div>
-    </div>
-
-    <!-- JS -->
-    <script src="./script.js"></script>
-    <!-- ion-icon -->
+    <!-- ion icon -->
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+      defer
     ></script>
     <script
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+      defer
     ></script>
+    <!-- JS -->
+    <script src="./script.js"></script>
+    <title>Music Player</title>
+  </head>
+  <body>
+    <div class="background">
+      <img src="./assets/1.jpg" alt="backgroung image" id="bg-img">
+    </div>
+
+    <div class="container">
+      <div class="player-img">
+        <img src="./assets/1.jpg" alt="music image" class="active" id="cover">
+      </div>
+
+      <h2 id="music-title">Test</h2>
+      <h3 id="music-artist">Test h2</h3>
+
+      <div class="player-progress" id="player-progress">
+        <div class="progress" id="progress"></div>
+        <div class="music-duration">
+          <span id="current-time">0:00</span>
+          <span id="duration">0:00</span>
+        </div>
+      </div>
+
+
+      <div class="player-controls">
+        <ion-icon name="play-back-outline" title="Previous"></ion-icon>
+        <ion-icon name="play-outline play-button" title="Play"></ion-icon>
+        <ion-icon name="play-forward-outline" title="Next"></ion-icon>
+      </div>
+
+    </div>
   </body>
 </html>
