@@ -10,6 +10,7 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .background {
@@ -36,7 +37,7 @@ body {
 
 .container {
   background: #e7e7e7;
-  height: 500px;
+  height: 550px;
   width: 400px;
   border-radius: 20px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
